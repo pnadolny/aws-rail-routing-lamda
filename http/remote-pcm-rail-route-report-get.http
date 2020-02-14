@@ -1,0 +1,24 @@
+POST https://pcmrail.alk.com/REST/v24.1/Service.svc/route/Report
+Content-Type: application/json
+Authorization: HIDDEN - enter yours here.
+
+{
+  "Stops": [{
+    "Format": "StationState",
+    "Name": "Los Angeles, Ca",
+    "Railroad": "UP"
+  },
+  {
+    "Format": "StationState",
+    "Name": "Denver,CO",
+    "Railroad": "UP"
+  }],
+  "Options": {
+    "RoutingPreference": "Practical",
+    "DistUnit": "Miles"
+  },
+  "Report": "Railroad"
+}
+
+###
+
